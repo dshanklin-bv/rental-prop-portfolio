@@ -1,0 +1,203 @@
+{
+  "property_id": "144_grandfather_farms_banner_elk",
+  "name": "144 Grandfather Farms House",
+  "address": "144 Grandfather Farms Rd, Banner Elk, NC 28604",
+  "property_type": "Single Family Home (STR/LTR Potential)",
+  
+  "financial_details": {
+    "current_market_value": 560000,
+    "original_purchase_price": 485000,
+    "cost_basis": 485000,
+    "purchase_date": "2025-01-01",
+    "current_mortgage_balance": 388000,
+    "loan_details": {
+      "lender": "TBD Bank",
+      "current_balance": 388000,
+      "interest_rate": 0.0675,
+      "monthly_payment": 2521.47,
+      "total_payment_with_escrow": 2650.00,
+      "escrow_balance": 500.00,
+      "maturity_date": "2055-01",
+      "remaining_term_years": 30,
+      "loan_type": "30-year fixed",
+      "current_payment_breakdown": {
+        "principal": 371.47,
+        "interest": 2150.00,
+        "escrow": 128.53
+      }
+    },
+    "notes": "Mountain home with STR/LTR potential. Near Grandfather Mountain and ski areas."
+  },
+  
+  "physical_details": {
+    "year_built": 2004,
+    "total_square_feet": 2040,
+    "lot_size_acres": 0.51,
+    "stories": 2,
+    "parking": "Attached Garage",
+    "special_features": [
+      "Open design with cathedral ceiling",
+      "Finished basement for additional living space", 
+      "Large deck and outdoor space",
+      "Fenced back yard",
+      "1 mile to Grandfather Vineyard",
+      "10 minutes to Sugar Mountain ski area",
+      "15 minutes to Grandfather Mountain"
+    ]
+  },
+  
+  "units": [
+    {
+      "unit_id": "whole_house",
+      "unit_name": "Entire House",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "square_feet": 2040,
+      "features": [
+        "Cathedral ceiling living area",
+        "Open kitchen/dining design",
+        "Primary suite upstairs",
+        "Two bedrooms on main level",
+        "Finished basement",
+        "Large deck",
+        "Mountain views"
+      ],
+      "rental_info": {
+        "market_rent": 2625,
+        "current_rent": 0,
+        "lease_start": null,
+        "lease_end": null,
+        "tenant_type": "Family/Professional/Vacation"
+      }
+    }
+  ],
+  
+  "expenses": {
+    "property_tax": {
+      "annual_amount": 2016,
+      "monthly_amount": 168.00,
+      "notes": "Avery County tax rate 0.36% on $560k value"
+    },
+    "insurance": {
+      "annual_amount": 1800,
+      "monthly_amount": 150.00,
+      "notes": "Mountain property insurance"
+    },
+    "mortgage": {
+      "monthly_payment": 2521.47,
+      "escrow_payment": 128.53,
+      "total_payment": 2650.00,
+      "notes": "30-year fixed at 6.75%"
+    },
+    "utilities": {
+      "monthly_amount": 200,
+      "notes": "Electric heat/AC, higher mountain utility costs"
+    },
+    "maintenance_reserve": {
+      "percentage_of_rent": 0.10,
+      "notes": "Higher % due to mountain weather and STR turnover"
+    },
+    "vacancy_allowance": {
+      "percentage_of_rent": 0.08,
+      "notes": "Seasonal variation for mountain tourism"
+    },
+    "property_management": {
+      "percentage_of_rent": 0.15,
+      "notes": "STR management or traditional PM fees"
+    },
+    "other_expenses": {
+      "monthly_amount": 150,
+      "notes": "Snow removal, landscaping, cleaning supplies"
+    }
+  },
+  
+  "market_assumptions": {
+    "property_appreciation_rate": 0.045,
+    "rent_growth_rate": 0.055,
+    "notes": "Property: 4.5% appreciation (mountain premium). Rent: 5.5% growth (tourism demand, limited supply). Banner Elk showed 8.87% historical appreciation over 10 years.",
+    "historical_context": {
+      "banner_elk_appreciation": "134% over 10 years (8.87% annually)",
+      "tourism_premiums": "Ski area proximity, Grandfather Mountain, limited developable land",
+      "market_factors": "Strong STR market, growing remote work migration to mountains"
+    },
+    "stock_market_return": 0.075,
+    "stock_market_notes": "Conservative long-term stock return assumption"
+  },
+  
+  "sale_assumptions": {
+    "selling_costs_percentage": 0.085,
+    "selling_costs_breakdown": {
+      "realtor_fees": 0.06,
+      "costs_to_sell": 0.01,
+      "seller_closing_costs": 0.005,
+      "concession": 0.005,
+      "other": 0.005
+    },
+    "notes": "6% realtor + 1% costs to sell + 0.5% closing + 0.5% concession + 0.5% other = 8.5% total",
+    "capital_gains_tax_rate": 0.20,
+    "depreciation_recapture_rate": 0.25
+  },
+  
+  "scenarios": {
+    "traditional_ltr": {
+      "description": "Long-term rental at current Banner Elk market rate",
+      "unit_a_rent": 2625,
+      "unit_b_rent": 0,
+      "total_monthly_rent": 2625,
+      "occupancy_rate": 0.95,
+      "notes": "Stable long-term rental income"
+    },
+    "grandfather_str": {
+      "description": "Short-term vacation rental (Airbnb/Vrbo) full-time",
+      "str_daily_rate": 318.80,
+      "str_occupancy_rate": 0.44,
+      "total_monthly_rent": 4237,
+      "occupancy_rate": 0.44,
+      "notes": "Banner Elk STR market: $318.80 ADR, 44% occupancy = $4,237/month gross"
+    },
+    "seasonal_hybrid": {
+      "description": "STR during peak seasons (Dec-Mar, Jun-Aug), LTR off-peak",
+      "peak_months": 8,
+      "peak_str_rate": 380,
+      "peak_occupancy": 0.65,
+      "offpeak_ltr_rate": 2200,
+      "total_monthly_rent": 3650,
+      "occupancy_rate": 0.92,
+      "notes": "Peak STR: $380 x 65% = $7,410/month for 8 months. Off-peak LTR: $2,200 x 4 months. Average: $3,650/month"
+    },
+    "owner_use_str": {
+      "description": "Personal use 25% of time, STR remainder at premium rates",
+      "personal_use_percent": 0.25,
+      "str_daily_rate": 350,
+      "available_occupancy": 0.50,
+      "total_monthly_rent": 3938,
+      "occupancy_rate": 0.375,
+      "notes": "Premium $350 ADR due to limited availability. 75% available x 50% occupancy x $350 = $3,938/month"
+    },
+    "premium_str": {
+      "description": "High-end STR targeting luxury market with premium amenities",
+      "str_daily_rate": 450,
+      "str_occupancy_rate": 0.35,
+      "total_monthly_rent": 4725,
+      "occupancy_rate": 0.35,
+      "notes": "Premium positioning: $450 ADR x 35% occupancy = $4,725/month. Lower occupancy but higher ADR"
+    }
+  },
+  
+  "notes": [
+    "Property has excellent STR potential due to proximity to ski areas and Grandfather Mountain",
+    "Banner Elk market driven by tourism and outdoor recreation demand", 
+    "Mountain location provides premium appeal but seasonal fluctuations",
+    "Short-term rentals permitted - major advantage over other NC mountain towns",
+    "Consider hybrid strategy to maximize income and personal use",
+    "Property management essential for STR success - factor 15-20% fees"
+  ],
+  
+  "last_updated": "2025-01-09",
+  "data_sources": [
+    "AirDNA Banner Elk market data",
+    "Zillow rental market analysis", 
+    "Avery County property tax records",
+    "Local market research and comparable properties"
+  ]
+}

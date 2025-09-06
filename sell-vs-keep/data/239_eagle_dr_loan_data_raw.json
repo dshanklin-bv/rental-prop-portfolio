@@ -1,0 +1,54 @@
+{
+  "raw_wells_fargo_data": {
+    "account_name": "Eagle Mortgage",
+    "outstanding_principal_balance": 554825.38,
+    "interest_rate": 0.0387,
+    "monthly_payment": 3365.88,
+    "payment_breakdown": {
+      "principal_and_interest": 2783.80,
+      "property_insurance": 247.50,
+      "county_tax": 178.04,
+      "shortage_amount_due": 156.54
+    },
+    "escrow_balance": 652.01,
+    "escrow_monthly_payment": 582.08,
+    "next_payment_due": "2025-09-01",
+    "last_payment_received": "2025-08-01",
+    "autopay_enabled": true,
+    "principal_paid_3_years": 37174.62,
+    "ytd_totals": {
+      "principal": 7823.30,
+      "interest": 14447.10
+    },
+    "escrow_details": {
+      "county_tax": {
+        "next_payment": 2136.51,
+        "next_due": "2025-10",
+        "frequency": "semi-annual_estimated"
+      },
+      "homeowners_insurance": {
+        "provider": "USAA GROUP",
+        "policy_number": "00743527095A",
+        "premium_amount": 4201.00,
+        "frequency": "annual",
+        "policy_expiration": "2026-03"
+      }
+    },
+    "recent_payments": [
+      {"date": "2025-08-01", "amount": 3365.88, "principal_balance_after": 554825.38},
+      {"date": "2025-07-01", "amount": 3365.88, "principal_balance_after": 555814.36},
+      {"date": "2025-06-01", "amount": 3365.88, "principal_balance_after": 556800.16},
+      {"date": "2025-05-01", "amount": 3365.88, "principal_balance_after": 557782.79},
+      {"date": "2025-04-01", "amount": 3365.88, "principal_balance_after": 558762.25},
+      {"date": "2025-03-01", "amount": 3151.48, "principal_balance_after": 559738.56}
+    ],
+    "data_extraction_notes": [
+      "Monthly P&I payment: $2,783.80",
+      "Escrow payment: $582.08 (taxes + insurance)",
+      "Total monthly payment: $3,365.88",
+      "Annual property tax: ~$4,273 (2136.51 * 2)",
+      "Annual insurance: $4,201",
+      "Principal paydown rate: ~$989/month recent average"
+    ]
+  }
+}

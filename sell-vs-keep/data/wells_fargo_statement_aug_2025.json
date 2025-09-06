@@ -1,0 +1,55 @@
+{
+  "statement_date": "2025-08-01",
+  "loan_number": "0611989781",
+  "property_address": "239 EAGLE DR, BOONE, NC 28607",
+  "borrower": "DANIEL J SHANKLIN",
+  
+  "loan_details": {
+    "unpaid_principal_balance": 554825.38,
+    "interest_rate": 0.03875,
+    "maturity_date": "2052-04",
+    "maturity_date_full": "April 2052",
+    "escrow_balance": 652.01
+  },
+  
+  "current_payment_breakdown": {
+    "total_amount_due": 3365.88,
+    "principal": 992.18,
+    "interest": 1791.62,
+    "escrow": 582.08,
+    "pi_payment": 2783.80
+  },
+  
+  "last_payment_activity": {
+    "date": "2025-08-01",
+    "description": "Payment 08/2025", 
+    "total": 3365.88,
+    "principal": 988.98,
+    "interest": 1794.82,
+    "escrow": 582.08
+  },
+  
+  "year_to_date_totals": {
+    "total_received": 26283.84,
+    "principal_paid": 7823.30,
+    "interest_paid": 14447.10,
+    "escrow_paid": 4013.44
+  },
+  
+  "additional_info": {
+    "late_charge_threshold": 111.35,
+    "late_charge_date": "2025-09-16",
+    "payment_due_date": "2025-09-01",
+    "insurance_disbursed_ytd": 4201.00,
+    "automatic_withdrawal": true
+  },
+  
+  "calculated_remaining_term": {
+    "from_august_2025": "26.67 years",
+    "payments_remaining_approx": 320,
+    "note": "Maturity April 2052 from August 2025 statement"
+  },
+  
+  "data_source": "Wells Fargo Home Mortgage Statement August 2025",
+  "extracted_date": "2025-09-01"
+}

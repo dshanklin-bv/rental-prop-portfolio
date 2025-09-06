@@ -1,0 +1,235 @@
+{
+  "property_id": "239_eagle_dr_boone",
+  "name": "239 Eagle Drive Duplex",
+  "address": "239 Eagle Dr, Boone, NC 28607",
+  "property_type": "Single Family w/ MIL Suite (Duplex Potential)",
+  
+  "financial_details": {
+    "current_market_value": 950000,
+    "original_purchase_price": 750000,
+    "cost_basis": 780000,
+    "purchase_date": "2011-01-01",
+    "current_mortgage_balance": 554825.38,
+    "loan_details": {
+      "lender": "Wells Fargo",
+      "loan_number": "0611989781",
+      "account_name": "Eagle Mortgage", 
+      "current_balance": 554825.38,
+      "interest_rate": 0.03875,
+      "monthly_payment": 2783.80,
+      "total_payment_with_escrow": 3365.88,
+      "escrow_balance": 652.01,
+      "maturity_date": "2052-04",
+      "remaining_term_years": 26.67,
+      "loan_type": "30-year fixed",
+      "current_payment_breakdown": {
+        "principal": 992.18,
+        "interest": 1791.62,
+        "escrow": 582.08
+      },
+      "ytd_principal_paid": 7823.30,
+      "ytd_interest_paid": 14447.10
+    },
+    "notes": "Property purchased for $750K, cost basis $780K with improvements. Current market value $950K. Mortgage data from Wells Fargo as of Aug 2025."
+  },
+  
+  "physical_details": {
+    "year_built": 1973,
+    "total_square_feet": 3964,
+    "lot_size_acres": 0.94,
+    "stories": 2,
+    "parking": "Driveway",
+    "special_features": [
+      "Above Boone Golf Course",
+      "Separate MIL suite downstairs", 
+      "Radiant oil heat system",
+      "Over 1,000 sq ft storage space"
+    ]
+  },
+  
+  "units": [
+    {
+      "unit_id": "unit_a",
+      "unit_name": "Unit A (Main House)",
+      "bedrooms": 3,
+      "bathrooms": 4,
+      "square_feet": 2500,
+      "features": [
+        "Master bedroom ensuite on main level",
+        "Granite countertops",
+        "2 ovens",
+        "Upper level storage",
+        "One-level living capability"
+      ],
+      "rental_info": {
+        "market_rent": 3200,
+        "current_rent": 0,
+        "lease_start": null,
+        "lease_end": null,
+        "tenant_type": "Family/Professional"
+      }
+    },
+    {
+      "unit_id": "unit_b", 
+      "unit_name": "Unit B (Basement)",
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "square_feet": 1464,
+      "features": [
+        "Full updated kitchen",
+        "Dining area",
+        "Living area", 
+        "Large study with built-in bookcases",
+        "Nursery/office space",
+        "Separate entrance potential"
+      ],
+      "rental_info": {
+        "market_rent": 2200,
+        "current_rent": 0,
+        "lease_start": null,
+        "lease_end": null,
+        "tenant_type": "Student/Professional/Retiree"
+      }
+    }
+  ],
+  
+  "expenses": {
+    "property_tax": {
+      "annual_amount": 4273,
+      "monthly_amount": 356.08,
+      "notes": "Based on Wells Fargo escrow: $2,136.51 x 2 payments/year"
+    },
+    "insurance": {
+      "annual_amount": 4201,
+      "monthly_amount": 350.08,
+      "notes": "USAA homeowners insurance from Wells Fargo escrow"
+    },
+    "mortgage": {
+      "monthly_payment": 2783.80,
+      "escrow_payment": 582.08,
+      "total_payment": 3365.88,
+      "notes": "Wells Fargo mortgage payment - P&I + escrow"
+    },
+    "utilities": {
+      "monthly_amount": 150,
+      "notes": "Oil heat system - owner pays heating in winter"
+    },
+    "maintenance_reserve": {
+      "percentage_of_rent": 0.147,
+      "notes": "Updated with 2024-2025 expense framework: 14.7% for OLD property (1973) duplex with mountain weather conditions"
+    },
+    "vacancy_allowance": {
+      "percentage_of_rent": 0.063,
+      "notes": "Updated with expense framework: 6.3% for LTR suburban location (college town adjusted)"
+    },
+    "property_management": {
+      "percentage_of_rent": 0.10,
+      "notes": "Expense framework confirms 10% for full-service LTR management"
+    },
+    "other_expenses": {
+      "percentage_of_rent": 0.044,
+      "notes": "Updated with expense framework: 4.4% for LTR other expenses (insurance, utilities, CapEx, admin, supplies)"
+    }
+  },
+  
+  "market_assumptions": {
+    "property_appreciation_rate": 0.042,
+    "rent_growth_rate": 0.050,
+    "notes": "Property: 4.2% appreciation. Rent: 5.0% growth (college town demand, limited supply, inflation + premium growth). Rent growth typically exceeds property appreciation.",
+    "historical_context": {
+      "recent_nc_forecasts_2025_2029": "2.5% (Charlotte), 1.4% (Raleigh), 3.8% statewide recent",
+      "boone_premiums": "College town demand (ASU), mountain location, limited developable land",
+      "market_factors": "Higher than statewide due to university, golf course location, rental demand"
+    },
+    "stock_market_return": 0.075,
+    "stock_market_notes": "More conservative long-term stock return assumption, down from 10%"
+  },
+  
+  "sale_assumptions": {
+    "selling_costs_percentage": 0.085,
+    "selling_costs_breakdown": {
+      "realtor_fees": 0.06,
+      "costs_to_sell": 0.01,
+      "seller_closing_costs": 0.005,
+      "concession": 0.005,
+      "other": 0.005
+    },
+    "notes": "6% realtor + 1% costs to sell + 0.5% closing + 0.5% concession + 0.5% other = 8.5% total",
+    "capital_gains_tax_rate": 0.20,
+    "depreciation_recapture_rate": 0.25
+  },
+  
+  "scenarios": {
+    "both_units": {
+      "description": "Both Unit A and Unit B rented to long-term tenants",
+      "unit_a_rent": 3200,
+      "unit_b_rent": 2200,
+      "total_monthly_rent": 5400,
+      "occupancy_rate": 0.94
+    },
+    "unit_a_only": {
+      "description": "Only Unit A (main house) rented, Unit B vacant",
+      "unit_a_rent": 3200,
+      "unit_b_rent": 0,
+      "total_monthly_rent": 3200,
+      "occupancy_rate": 0.95
+    },
+    "unit_b_only": {
+      "description": "Only Unit B (MIL suite) rented, live in Unit A",
+      "unit_a_rent": 0,
+      "unit_b_rent": 2200,
+      "total_monthly_rent": 2200,
+      "occupancy_rate": 0.95
+    },
+    "premium_rents": {
+      "description": "Higher rents due to golf course location and amenities",
+      "unit_a_rent": 3500,
+      "unit_b_rent": 2300,
+      "total_monthly_rent": 5700,
+      "occupancy_rate": 0.96
+    },
+    "jt_scenario": {
+      "description": "JT family scenario: Unit B only for 2 years ($2,200), then mom moves to Unit A ($1,500) + Unit B continues ($2,300)",
+      "phase_1": {
+        "duration_years": 2,
+        "unit_a_rent": 0,
+        "unit_b_rent": 2200,
+        "total_monthly_rent": 2200,
+        "occupancy_rate": 0.95,
+        "notes": "Only Unit B rented"
+      },
+      "phase_2": {
+        "duration_years": 8,
+        "unit_a_rent": 1500,
+        "unit_b_rent": 2300,
+        "total_monthly_rent": 3800,
+        "occupancy_rate": 0.98,
+        "notes": "Mom in Unit A ($1,500 family rate) + regular renter in Unit B ($2,300 market rate)"
+      }
+    },
+    "taylor_scenario": {
+      "description": "Taylor scenario: Unit A upstairs ($2,500) + Unit B downstairs ($2,200) - optimized rental rates",
+      "unit_a_rent": 2500,
+      "unit_b_rent": 2200,
+      "total_monthly_rent": 4700,
+      "occupancy_rate": 0.96,
+      "notes": "Higher Unit A rent reflects upstairs premium and larger space (3BR vs 1BR)"
+    }
+  },
+  
+  "notes": [
+    "Property has excellent rental potential due to separate living spaces",
+    "Boone market driven by ASU student/faculty demand", 
+    "Golf course location provides premium appeal",
+    "Consider short-term rental (Airbnb) potential for higher returns",
+    "Oil heat system may require budget for heating costs in winter months"
+  ],
+  
+  "last_updated": "2025-01-09",
+  "data_sources": [
+    "Zillow listing data",
+    "Ownerly property records", 
+    "Redfin comparable sales",
+    "Local market knowledge"
+  ]
+}

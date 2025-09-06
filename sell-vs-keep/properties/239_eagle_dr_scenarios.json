@@ -1,0 +1,201 @@
+{
+  "property_scenarios": {
+    "conservative_sale": {
+      "name": "Conservative Sale",
+      "description": "Conservative sale price and appreciation assumptions",
+      "sale_price": 950000,
+      "appreciation_rate": 0.025,
+      "holding_period_years": 10,
+      "selling_costs_pct": 0.085,
+      "notes": "Conservative market assumptions with standard 8.5% selling costs"
+    },
+    "base_case_sale": {
+      "name": "Base Case Sale", 
+      "description": "Current market conditions",
+      "sale_price": 950000,
+      "appreciation_rate": 0.042,
+      "holding_period_years": 10,
+      "selling_costs_pct": 0.085,
+      "notes": "Current market value with standard 8.5% selling costs"
+    },
+    "optimistic_sale": {
+      "name": "Optimistic Sale",
+      "description": "Strong market conditions favor seller",
+      "sale_price": 1000000,
+      "appreciation_rate": 0.055,
+      "holding_period_years": 10,
+      "selling_costs_pct": 0.08,
+      "notes": "Premium sale price with slightly lower selling costs due to strong market"
+    }
+  },
+
+  "rental_scenarios": {
+    "both_units_market": {
+      "name": "Both Units - Market Rent",
+      "description": "Both units rented at current market rates",
+      "unit_a_rent": 2600,
+      "unit_b_rent": 2400,
+      "vacancy_rate": 0.06,
+      "rent_growth_rate": 0.03,
+      "management_fee_pct": 0.10,
+      "notes": "Standard long-term rentals"
+    },
+    "unit_a_only": {
+      "name": "Unit A Only (Live in B)",
+      "description": "Rent main house, live in basement", 
+      "unit_a_rent": 3200,
+      "unit_b_rent": 0,
+      "vacancy_rate": 0.05,
+      "rent_growth_rate": 0.03,
+      "management_fee_pct": 0.08,
+      "notes": "Owner occupies Unit B"
+    },
+    "short_term_rentals": {
+      "name": "Short-Term Rental Strategy",
+      "description": "Airbnb/VRBO targeting ASU visitors and tourists",
+      "unit_a_rent": 4500,
+      "unit_b_rent": 2800,
+      "vacancy_rate": 0.15,
+      "rent_growth_rate": 0.05,
+      "management_fee_pct": 0.20,
+      "notes": "Higher income but more vacancy, higher management costs"
+    }
+  },
+
+  "stock_market_scenarios": {
+    "conservative_stocks": {
+      "name": "Conservative Portfolio",
+      "description": "Conservative balanced portfolio",
+      "annual_return": 0.065,
+      "volatility": 0.12,
+      "tax_treatment": "long_term_capital_gains",
+      "dividend_yield": 0.025,
+      "rebalancing_costs": 0.001,
+      "notes": "60/40 stocks/bonds, lower risk"
+    },
+    "index_funds": {
+      "name": "Index Fund Portfolio", 
+      "description": "Low-cost total market index funds",
+      "annual_return": 0.075,
+      "volatility": 0.16,
+      "tax_treatment": "long_term_capital_gains",
+      "dividend_yield": 0.015,
+      "rebalancing_costs": 0.0005,
+      "notes": "S&P 500 or total market, tax efficient"
+    },
+    "growth_stocks": {
+      "name": "Growth Stock Portfolio",
+      "description": "Higher risk/reward growth focused",
+      "annual_return": 0.095,
+      "volatility": 0.22,
+      "tax_treatment": "long_term_capital_gains", 
+      "dividend_yield": 0.005,
+      "rebalancing_costs": 0.002,
+      "notes": "Technology, growth companies, higher volatility"
+    }
+  },
+
+  "tax_scenarios": {
+    "nc_resident": {
+      "name": "NC Resident",
+      "description": "North Carolina resident tax treatment",
+      "state_income_tax_rate": 0.0425,
+      "state_capital_gains_rate": 0.0425,
+      "federal_capital_gains_rate": 0.20,
+      "depreciation_recapture_rate": 0.25,
+      "property_tax_deductible": true,
+      "mortgage_interest_deductible": true,
+      "notes": "NC 4.25% flat tax on all income including capital gains"
+    },
+    "tx_resident_nc_property": {
+      "name": "TX Resident - NC Property",
+      "description": "Texas resident owning North Carolina property (non-resident taxes)",
+      "state_income_tax_rate": 0.0425,
+      "state_capital_gains_rate": 0.0425,
+      "federal_capital_gains_rate": 0.20,
+      "depreciation_recapture_rate": 0.25,
+      "property_tax_deductible": true,
+      "mortgage_interest_deductible": true,
+      "withholding_required": true,
+      "notes": "Must pay NC 4.25% flat tax on NC rental income and property gains as non-resident"
+    },
+    "out_of_state_owner": {
+      "name": "Out-of-State Owner (General)",
+      "description": "General non-resident property owner",
+      "state_income_tax_rate": 0.0425,
+      "state_capital_gains_rate": 0.0425,
+      "federal_capital_gains_rate": 0.20,
+      "depreciation_recapture_rate": 0.25,
+      "property_tax_deductible": true,
+      "mortgage_interest_deductible": true,
+      "withholding_required": true,
+      "notes": "NC taxes non-resident property income and gains at 4.25%"
+    },
+    "primary_residence": {
+      "name": "Primary Residence Sale",
+      "description": "Section 121 exclusion - primary residence for 2+ years",
+      "state_income_tax_rate": 0.0425,
+      "state_capital_gains_rate": 0.0425,
+      "federal_capital_gains_rate": 0.0,
+      "primary_residence_exclusion": 250000,
+      "depreciation_recapture_rate": 0.0,
+      "property_tax_deductible": true,
+      "mortgage_interest_deductible": true,
+      "notes": "Federal: $250k exclusion, NC: 4.25% on gains (no exclusion at state level)"
+    },
+    "1031_exchange": {
+      "name": "1031 Exchange Strategy",
+      "description": "Like-kind exchange to defer capital gains",
+      "state_income_tax_rate": 0.0,
+      "state_capital_gains_rate": 0.0,
+      "federal_capital_gains_rate": 0.0,
+      "depreciation_recapture_rate": 0.0,
+      "exchange_costs": 5000,
+      "timeline_requirements": "45/180 day rules",
+      "notes": "Defer taxes by purchasing replacement property"
+    }
+  },
+
+  "combined_scenarios": {
+    "sell_now_primary": {
+      "name": "Sell Now - Primary Residence",
+      "property_scenario": "base_case_sale",
+      "rental_scenario": "both_units_market",
+      "stock_scenario": "index_funds", 
+      "tax_scenario": "primary_residence",
+      "description": "Sell within 2 years as primary residence - no federal capital gains tax"
+    },
+    "conservative_live_in_b": {
+      "name": "Conservative - Live in Unit B",
+      "property_scenario": "conservative_sale",
+      "rental_scenario": "unit_a_only", 
+      "stock_scenario": "conservative_stocks",
+      "tax_scenario": "tx_resident_nc_property",
+      "description": "Conservative assumptions, TX resident with NC property"
+    },
+    "base_case_both_units": {
+      "name": "Base Case - Both Units Rented",
+      "property_scenario": "base_case_sale",
+      "rental_scenario": "both_units_market",
+      "stock_scenario": "index_funds",
+      "tax_scenario": "tx_resident_nc_property", 
+      "description": "Most likely scenario for TX resident with NC property"
+    },
+    "aggressive_str": {
+      "name": "Aggressive - Short-Term Rentals",
+      "property_scenario": "optimistic_sale",
+      "rental_scenario": "short_term_rentals",
+      "stock_scenario": "growth_stocks",
+      "tax_scenario": "tx_resident_nc_property",
+      "description": "High-income STR strategy for TX resident with NC property"
+    }
+  },
+
+  "notes": [
+    "Scenarios can be mixed and matched for comprehensive analysis",
+    "Tax implications vary significantly by scenario combination",
+    "NC taxes capital gains as ordinary income (4.5%)",
+    "STR income taxed as ordinary income, not capital gains",
+    "Consider depreciation recapture on rental property sale"
+  ]
+}
